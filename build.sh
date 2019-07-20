@@ -8,8 +8,8 @@ cp target/springboot-docker.jar docker/java/app.jar
 
 cd docker/mysql
 
-docker build -t mysql-test-7 .
+docker build -t mysql-test-1 .
 
 cd ../java
 
-docker build -t java-test-7 .
+docker build -t java-test-1 .
