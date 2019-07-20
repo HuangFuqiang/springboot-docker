@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.code.mapper.FilmMapper">
+   <insert id="insertRecode">
+        insert into film(title, description, language_id, rental_duration, rental_rate, replacement_cost, last_update)
+        values(#{title}, #{description}, #{languageId}, #{rentalDuration}, #{rentalRate}, #{replacementCost}, #{lastUpdate})
+   </insert>
+</mapper>

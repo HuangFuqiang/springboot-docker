@@ -1,0 +1,24 @@
+version: "3"
+services:
+  mysql-1:
+    container_name: mysql-1
+    image: mysql-test-7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+  java-1:
+    container_name: java-1
+    image: java-test-7
+    depends_on:
+      - mysql-1
+    links:
+      - mysql-1
+    environment:
+      MYSQL_IP: mysql-1
+      MYSQL_PORT: 3306
+      MYSQL_USERNAME: docker
+      MYSQL_PASSWORD: 123456
+      FILM_TITLE: title
+      FILM_DESCRIPTION: description
+      FILM_LANGUAGE_ID: 1
