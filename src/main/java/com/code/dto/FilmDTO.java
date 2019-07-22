@@ -3,9 +3,6 @@ package com.code.dto;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * Created by hande on 2019/7/20.
- */
 public class FilmDTO {
 
     public FilmDTO() {}

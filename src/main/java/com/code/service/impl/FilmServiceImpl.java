@@ -8,9 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by hande on 2019/7/20.
- */
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class FilmServiceImpl implements FilmService {

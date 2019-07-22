@@ -7,9 +7,6 @@ import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by hande on 2019/7/20.
- */
 @Aspect
 @Component
 public class FilmAspect {

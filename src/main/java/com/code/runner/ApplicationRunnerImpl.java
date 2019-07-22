@@ -11,9 +11,6 @@ import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * Created by hande on 2019/7/20.
- */
 @Component
 public class ApplicationRunnerImpl implements ApplicationRunner {
 
